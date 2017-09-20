@@ -4,9 +4,9 @@ export default class ImageDisplay extends Component {
   render() {
     let roverImage = this.props.images.map((image) => {
     return(
-        <div key={image.id}>
-            <img src={image.img_src}/>
-            <div>
+        <div key={image.id} className="card">
+            <img className="card-img-top" src={image.img_src}/>
+            <div className="card-footer text-muted p-2 text-center">
             <p>Rover: {image.rover.name}</p>
             <p>Earth Date:{image.earth_date}</p>
             </div>
@@ -14,7 +14,7 @@ export default class ImageDisplay extends Component {
       )
     })
     return (
-      <div>
+      <div className="d-flex flex-wrap justify-content-center m-2">
         {roverImage}
       </div>
     )

@@ -1,8 +1,13 @@
-.form{
+.inputForm{
   display: flex;
   justify-content: center;
-  margin: 50px;
+  height:200px;
   font-size: 20px;
+  background-image: url("octavian-rosca-208933.jpg");
+  background-position: center;
+  background-size: cover;
+  color: peachpuff;
+  font-weight: bold;
 }
 
 label{
@@ -10,6 +15,21 @@ label{
   margin-left: 20px;
 }
 
-button{
-  justify-content: center;
+.btn{
+  margin-left: 15px;
+  padding:10px;
+  font-size: 15px;
+  margin-top: 70px;
+}
+
+input{
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 70px;
+}
+
+select{
+  height: 30px;
+  font-size: 20px;
 }
